@@ -5,4 +5,3 @@ keywords
 operator
 looping statement 
 data type
-
