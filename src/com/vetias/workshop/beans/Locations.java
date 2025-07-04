@@ -1,61 +1,78 @@
-public class Locations {
-
-                      
- private String name;
-    private double area;
-    private double latitute;
-    private String description;
-    private String country;
-    private String city;
+public class Location {
+    public static void main(String[] args) {
+        
+    Location location = new Location("Vet Tindhl", 40.785091, -73.968285, "Erode", "10024", "123-456-7890");
+        System.out.println(location);
+    }
+    private String name;
+    private double latitude;
+    private double longitude;
     private String address;
-    private String postalcode;
+    private String postalCode;
+    private String contact;
 
-    public void setName(String aName) {
-            name = aName;
-        }
-     public String getname(){
-            return name;
-        } 
-    public void setArea(String areas) {
-            area = areas;
-        }
-     public String getArea(){
-            return area;
-        } 
-    public void setLatitute(String latitute) {
-            latitute = latitute;
-        }
-     public String getLatitute(){
-            return latitute;
-        }
-    public void setDescription(String description) {
-            description = description;
-        }
-     public String getDescription(){
-            return description;
-        }
-    public void setCountry(String country) {
-            country = country;
-        }
-     public String getCountry(){
-            return description;
-        }      
-    public void setCity(String city) {
-            city = city;
-        }
-     public String getCity(){
-            return city;
-        }
+    public Location(String name, double latitude, double longitude, String address, String postalCode, String contact) {
+        this.name = name;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.address = address;
+        this.postalCode = postalCode;
+        this.contact = contact;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
     public void setAddress(String address) {
-            address = address;
-        }
-     public String getAddress(){
-            return address;
-        }
-    public void setPostalcode(String postalcode) {
-            postalcode = postalcode;
-        }
-     public String getPostalcode(){
-            return postalcode;
-        }
+        this.address = address;
+    }
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
+    @Override
+    public String toString() {      
+        return "Location{" +
+                "name='" + name + '\'' +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                ", address='" + address + '\'' +
+                ", postalCode='" + postalCode + '\'' +
+                ", contact='" + contact + '\'' +
+                '}';
+    }
+    
 }
