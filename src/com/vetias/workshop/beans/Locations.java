@@ -1,7 +1,14 @@
 public class Locations {
 
                       
-
+ private String name;
+    private double area;
+    private double latitute;
+    private String description;
+    private String country;
+    private String city;
+    private String address;
+    private String postalcode;
 
     public void setName(String aName) {
             name = aName;
