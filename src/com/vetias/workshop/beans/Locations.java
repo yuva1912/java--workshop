@@ -20,7 +20,7 @@ public class Location {
         this.contact = contact;
     }
 
-    public String getName() {
+    public String getName() { 
         return name;
     }
 
