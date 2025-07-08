@@ -17,7 +17,7 @@ public class EmployeeDetails{
        employees[5][0] ="bala";
        employees[5][1] ="100000";
        for (String[]  Employee : employees) {
-          system.out.println(Arrays.toString(Employee));
+          System.out.println(Arrays.toString(Employee));
 
        }
 
