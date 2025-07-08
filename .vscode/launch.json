@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Calculator",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "projectName": "java--workshop_7bf97a14"
+        },
+        {
+            "type": "java",
+            "name": "RegistrationTimeLeft",
+            "request": "launch",
+            "mainClass": "RegistrationTimeLeft",
+            "projectName": "java--workshop_7bf97a14"
+        },
+        {
+            "type": "java",
+            "name": "AgeCalculator",
+            "request": "launch",
+            "mainClass": "AgeCalculator",
+            "projectName": "java--workshop_7bf97a14"
+        },
+        {
+            "type": "java",
             "name": "NameGenerator",
             "request": "launch",
             "mainClass": "NameGenerator",
