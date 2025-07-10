@@ -11,4 +11,5 @@ public class WordCountTest {
         Assertions.assertEquals(12, count);
     }
 
-}
+} 
+
