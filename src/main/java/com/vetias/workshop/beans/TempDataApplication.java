@@ -13,5 +13,6 @@ public class TempDataApplication {
             LocalDate.of(2023, 10, 1)
         )
         System.out.println(org);
+    }
 
 }
