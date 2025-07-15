@@ -2,6 +2,7 @@ package com.vetias.java.workshop.TempData.dao;
 import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.vetias.java.workshop.TempData.Beans.Organization;
@@ -39,7 +40,7 @@ public class JDBCExample {
             null);
             organizationDAO.save(dbConnection, vet);
         System.out.println("Organization saved successfully!");
-
+        
                                     
     
 }
