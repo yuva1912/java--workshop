@@ -25,8 +25,17 @@ public class JDBCExample {
         catch(SQLException sqlException)
         {
             System.out.println("Error Creating table: " + sqlException);
-        }                                        
-    
+        } 
+        OrganizationDAO organizationDAO = new OrganizationDAO();
+        organizationDAO.createTable(dbConnection);
+        Organization organization = new Organization( name:"VET",   
+        Description: "Vellarlar Education Trust";                                    
+        Website: "www.vellarlar.com";
+        Email: "contact@vet.com";
+        ContactNumber: "1234567890";
+        RegistrationNo: 123456, registration:null);
+        organizationDAO.save(dbConnection, vet);
+        System.out.println("Organization saved successfully.");
 }
 }
 
