@@ -30,7 +30,7 @@ public class JDBCExample {
         organizationDAO.createTable(dbConnection);
         Organization organization = new Organization( name:"VET",   
         Description: "Vellarlar Education Trust";                                    
-        Website: "www.vellarlar.com";
+        Website: "www.vellarlar.com";                                                                                                                                                                        
         Email: "contact@vet.com";
         ContactNumber: "1234567890";
         RegistrationNo: 123456, registration:null);
