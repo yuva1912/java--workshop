@@ -33,7 +33,7 @@ public class OrganizationDao {
                         preparedStatement.setString(parameterIndex:2, vet.Website());
                         preparedStatement.setString(parameterIndex:3, vet.Email());
                         preparedStatement.setString(parameterIndex:4, vet.ContactNumber()); 
-                        preparedStatement.setInt(parameterIndex:5, vet.RegistrationNo());
+                        preparedStatement.setString(parameterIndex:5, vet.RegistrationNo());
                         preparedStatement.setString(parameterIndex:6, vet.Description());
                         PreparedStatement.executeUpdate();
     
