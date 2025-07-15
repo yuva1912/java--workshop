@@ -29,12 +29,12 @@ public class OrganizationDao {
             INSERT INTO Organization (NAME, WEBSITE, EMAIL, CONTACT_NUMBER, 
             REGISTRATION_NO, DESCRIPTION) VALUES (?, ?, ?, ?, ?, ?)            
                         """;)){
-                        preparedStatement.setString(1, vet.getName());
-                        preparedStatement.setString(2, vet.getWebsite());
-                        preparedStatement.setString(3, vet.getEmail());
-                        preparedStatement.setString(4, vet.getContactNumber()); 
-                        preparedStatement.setInt(5, vet.getRegistrationNo());
-                        preparedStatement.setString(6, vet.getDescription());
+                        preparedStatement.setString(parameterIndex:1, vet.Name());
+                        preparedStatement.setString(parameterIndex:2, vet.Website());
+                        preparedStatement.setString(parameterIndex:3, vet.Email());
+                        preparedStatement.setString(parameterIndex:4, vet.ContactNumber()); 
+                        preparedStatement.setInt(parameterIndex:5, vet.RegistrationNo());
+                        preparedStatement.setString(parameterIndex:6, vet.Description());
                         PreparedStatement.executeUpdate();
     
         
@@ -43,7 +43,7 @@ public class OrganizationDao {
       
     }
     return 0; 
-    
+
     }
 
 }
